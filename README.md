@@ -1,15 +1,28 @@
 # Agibank
-Teste técnico QA – Web
+## Teste técnico QA – Web
 
-## Framework (Playwright + TypeScript)
-Neste framework de automação de casos de testes de QA, realizei a validação da funcionalidade de search do blog, com a correta exibição dos artigos e correto funcionamento do serviço de simulação de empréstimo pessoal. 
+Este projeto automatiza dois cenários do blog do Agi usando testes que simulam ações de um usuário comum. Em linguagem simples:
 
-Criei 2 casos de testes:
+- Teste 1: Procura por um artigo sobre como diminuir a parcela do empréstimo consignado e confirma que o artigo correto aparece e contém textos esperados.
+- Teste 2: Encontra o artigo sobre simulação de empréstimo pessoal, abre o link de simulação, verifica se o formulário aparece, preenche com dados fictícios e envia.
 
-- Validar a exibição com sucesso do artigo sobre diminuição da parcela do empréstimo consignado
-- Validar que a simulação de empréstimo pessoal funciona com sucesso
+Os testes seguem passos parecidos com o que um usuário faria no navegador: abrir o site, aceitar cookies (se aparecer), usar a busca, abrir artigos e interagir com o formulário de simulação.
 
+Métodos principais usados (nomes técnicos, apenas para referência):
 
+- open
+- acceptCookiesIfPresent
+- assertSearchAvailable
+- goToSearchResults
+- assertHasResults
+- openArticleByTitle
+- assertOnArticle
+- assertArticleContainsTexts
+- openInternalLoanSimulationLink
+- assertOnLoanSimulationPage
+- assertLoanLeadFormVisible
+- fillLoanLeadFormWithRandomData
+- submitLoanLeadForm
 
 ### Requisitos
 - Node.js
