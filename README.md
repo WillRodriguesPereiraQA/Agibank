@@ -1,6 +1,8 @@
 # Agibank
 ## Teste técnico QA – Web
 
+*Testes realizados em uma máquina WINDOWS*
+
 Este projeto automatiza dois cenários do blog do Agi usando testes que simulam ações de um usuário comum. Em linguagem simples:
 
 - Teste 1: Procura por um artigo sobre como diminuir a parcela do empréstimo consignado e confirma que o artigo correto aparece e contém textos esperados.
