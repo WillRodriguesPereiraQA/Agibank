@@ -1,0 +1,24 @@
+{
+  "name": "agibank-playwright-framework",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Framework de automação web (Playwright + TypeScript).",
+  "type": "module",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "report": "playwright show-report",
+    "codegen": "playwright codegen",
+    "format": "prettier -w .",
+    "format:check": "prettier -c ."
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^22.13.0",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.2"
+  }
+}
+
